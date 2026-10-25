@@ -1,12 +1,10 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
+
 
 :root {
-    --cream: #fffdf0;
-    --red: #852719;
-    --red-dark: #542018;
-    --gold: #ffcc00;
+    --cream: white;
+    --red: red;
+    --red:red;
+    --gold: yellow;
     --gold-hover: #f0b900;
     --text-muted: #81766a;
     --white: #ffffff;
@@ -39,10 +37,6 @@ iframe {
     max-width: 100%;
 }
 
-
-/* =========================
-   CONTACT SECTION
-========================= */
 
 .contact {
     position: relative;
@@ -79,12 +73,6 @@ iframe {
     align-items: center;
     gap: clamp(45px, 8vw, 130px);
 }
-
-
-/* =========================
-   MAP
-========================= */
-
 .contact-map {
     width: 100%;
     min-width: 0;
@@ -98,13 +86,8 @@ iframe {
     display: block;
     width: 100%;
     height: clamp(300px, 40vh, 500px);
-    border: 0;
+    border: 0
 }
-
-
-/* =========================
-   CONTACT INFORMATION
-========================= */
 
 .contact-info {
     width: 100%;
@@ -247,14 +230,10 @@ iframe {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     width: 100%;
-    background: var(--red);
-    color: var(--cream);
+    background: red;
+    color: red;
     padding: 55px 8% 20px;
 }
 
@@ -333,7 +312,7 @@ iframe {
     font-size: 11px;
     line-height: 1.7;
     color: #ff
-
+}
 @media (max-width: 1000px) {
     .contact {
         padding-left: 6%;
@@ -473,16 +452,6 @@ iframe {
 }
 
 
-/* =========================
-   SMALL PHONES
-========================= */
-
-@media (max-width: 380px) {
-    .contact {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
     .contact-container {
         gap: 28px;
     }
@@ -514,8 +483,6 @@ iframe {
         grid-column: 1;
     }
 
-    .footer-logo {
-        grid-column: 1;
-        justify-self: start;
-    }
+    
+    
 }
