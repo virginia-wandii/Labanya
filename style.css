@@ -1,126 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 10%;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+   min-height: 100vh;
+   overflow-x: hidden;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #222;
 }
+
 header {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    z-index: 10;
-    backdrop-filter: blur(10px);
-    border-radius: 4px;
+   width: 100%;
+   background: #171717;
 }
+
 .navbar {
-position: absolute;
-top: 5px;
-left: 1%;
-width: 100%;
-min-height: 100px;
-box-sizing: border-box;
-display: flex;
-justify-content: flex-end;
-align-items: center;
-gap: 40px;
-padding: 10px 40px;
-background: rgba(0, 0, 0, 0.80);
-border-bottom: 4px solid rgba(255, 255, 255, 0.15);
-z-index: 100;
-
+   min-height: 72px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 12px 32px;
+   padding: 12px clamp(20px, 5vw, 64px);
 }
+
 .navbar a:hover {
-    color: #d6a354
+   color: #f4bd45;
 }
+
 .navbar a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 16px;
+   font-weight: bold;
+   transition: color 0.3s ease;
 }
-.navbar-nav li:last-child {
-    margin-right: 0;
-    padding-right: 0;
 
-}
 .navbar a:last-child {
-    background-color: red;
-    color: white;
-    border-radius: 5px;
-    align-self: center;
-    width: max-content;
-    justify-self: center;
-    display: inline-block;
-    white-space: nowrap;
-    line-height: 1.2;
-    padding: 30px 30px;
+   color: #fff;
 }
+
+.navbar a:focus-visible {
+   outline: 2px solid #f4bd45;
+   outline-offset: 4px;
+}
+
 .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+   position: relative;
+   width: 100%;
+   height: min(88vh, 900px);
+   min-height: 320px;
+   overflow: hidden;
 }
 
 .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    object-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+   object-position: center;
+}
 
-}
-.hero-ima{
-    text-decoration: none;
-    padding: 14px 45px;
-    border-radius: 30px;
-    font-weight: bold;
-    box-shadow: 0 3px 5px #0002;
-    width: auto;
-}
 /* menu */
+.menu-section {
+   width: min(1200px, 100%);
+   margin: 0 auto;
+   padding: 48px clamp(20px, 5vw, 64px) 64px;
+}
+
+.menu-section h1 {
+   margin-bottom: 28px;
+   color: #252525;
+   font-size: clamp(2rem, 4vw, 2.75rem);
+   text-align: center;
+}
+
 .menu-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    padding: 405px ;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+   gap: 25px;
 }
+
 .menu-card {
-    background: white;
-    color: tomato;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 405px ;
-    box-shadow: 0 4px 10px black;
+   background: #fff;
+   color: #262626;
+   border-radius: 15px;
+   overflow: hidden;
+   text-align: center;
+   padding-bottom: 18px;
+   box-shadow: 0 4px 14px #0000001a;
 }
+
 .menu-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
 }
+
 .menu-card h3 {
-    margin: 15px 0 8px;
-    font-size: 1.8rem;
+   margin: 15px 0 8px;
+   padding: 0 12px;
+   font-size: 1.25rem;
 }
+
 .menu-card p {
-    font-weight: bold;
-    font-size: 1.2rem;
+   color: #a72a1b;
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+   .navbar {
+       justify-content: center;
+       gap: 10px 20px;
+   }
 }
