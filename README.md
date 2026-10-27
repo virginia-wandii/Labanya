@@ -28,7 +28,7 @@ Git and GitHub
 .open index.html in your browser,or use the live Server extension
 .Explore the different pages using the nav bar
 ## Live Deployment
-
+https://virginia-wandii.github.io/Labanya/
 ## figma design
 https://www.figma.com/design/zbAy6FrSzYoMhi3sV2WQDl/Pizza-Hut?node-id=0-1&t=DDxwIXkHSDFIT4UT-1
 
